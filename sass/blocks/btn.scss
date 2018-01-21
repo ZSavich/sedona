@@ -1,0 +1,6 @@
+.btn {
+  background-color: $skyblue;
+  color: white;
+  @include font(21px, bold, 26px);
+  text-transform: uppercase;
+}

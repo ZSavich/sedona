@@ -1,0 +1,13 @@
+.site-list {
+  @include list-none;
+}
+
+.site-list__item {
+  text-align: center;
+}
+
+.site-list__item a {
+  color: white;
+  font-size: 18px;
+  line-height: 40px;
+}

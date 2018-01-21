@@ -1,0 +1,52 @@
+.advantages {
+  background-color: $skyblue;
+  text-align: center;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.advantages__list {
+  @include list-none;
+}
+
+.advantages__info {
+  background-color: $skyblue;
+  color: white;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.advantages__info--gray {
+  background-color: #eeeeee;
+  color: black;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: auto;
+    height: 1px;
+    background-color: #d6d6d6;
+    left: 20px;
+    right: 20px;
+    bottom: -1px;
+    z-index: 5;
+  }
+}
+
+.advantages__title {
+  @include font(18px, bold, 26px);
+}
+
+.advantages__num {
+  @include font(14px, normal, 21px);
+}
+
+advantages__desc {
+  @include font(14px, normal, 21px);
+}
+
+.advantages__photo {
+  margin: 0;
+  line-height: 0;
+}

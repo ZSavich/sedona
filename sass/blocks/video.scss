@@ -1,0 +1,13 @@
+.video {
+  padding-top: 25px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.video__title {
+  @include font(18px, bold, 26px);
+}
+
+.video__desc {
+  @include font(14px, normal, 24px);
+}

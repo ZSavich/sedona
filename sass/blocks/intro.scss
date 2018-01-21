@@ -1,0 +1,28 @@
+.intro {
+  text-align: center;
+}
+
+.intro__header {
+  background-color: $skyblue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 90px;
+  padding-bottom: 80px;
+  margin-bottom: 30px;
+  &--inner {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}
+
+.intro__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.intro__desc {
+  font-size: 14px;
+  line-height: 24px;
+}

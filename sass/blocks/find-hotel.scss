@@ -1,0 +1,13 @@
+.find-hotel {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.find-hotel__title {
+  @include font(21px, bold, 26px);
+}
+
+.find-hotel__desc {
+  @include font(14px, normal, 24px);
+}

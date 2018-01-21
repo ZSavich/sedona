@@ -1,0 +1,52 @@
+.feedback__cell {
+  border: none;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: auto;
+    height: 1px;
+    background-color: #f2f2f2;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.feedback__title {
+  @include font(18px, bold, 26px);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.feedback__label {
+  @include font(14px, normal, 26px);
+}
+
+.feedback__input-text {
+  @include font(18px, bold, 26px);
+  text-transform: none;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.feedback__contact {
+  @include font(18px, bold, 26px);
+  text-transform: none;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.feedback__radio-title {
+  @include font(18px, bold, 26px);
+}
+
+.feedback__checkbox-label {
+  @include font(18px, bold, 26px);
+}
+
+.feedback__textarea {
+  @include font(18px, bold, 26px);
+  background-color: #f2f2f2;
+  border: none;
+}
