@@ -1,6 +1,11 @@
 .btn {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: $skyblue;
   color: white;
   @include font(21px, bold, 26px);
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }

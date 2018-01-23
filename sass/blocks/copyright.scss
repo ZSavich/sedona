@@ -1,3 +1,8 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
 .copyright__link {
   display: block;
   background-color: translate;
@@ -12,4 +17,5 @@
 
 .copyright__text {
   @include font(14px, normal, 26px);
+  margin-right: 10px;
 }

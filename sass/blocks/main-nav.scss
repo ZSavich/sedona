@@ -1,4 +1,27 @@
 .main-nav {
+  position: relative;
   background-color: $skyblue;
   color: white;
+}
+
+.main-nav--close .main-nav__list {
+  display: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icon-cross.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  text-indent: -9999px;
+  right: 20px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.main-nav--close .main-nav__toggle {
+  background-image: url("../img/icon-menu.svg");
 }

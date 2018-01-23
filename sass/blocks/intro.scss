@@ -1,5 +1,11 @@
 .intro {
   text-align: center;
+  margin-top: -27px;
+  padding-bottom: 5px;
+}
+
+.intro__wrapper {
+  padding: 0 40px;
 }
 
 .intro__header {
@@ -9,10 +15,24 @@
   background-position: center bottom;
   padding-top: 90px;
   padding-bottom: 80px;
-  margin-bottom: 30px;
+  position: relative;
+  z-index: -1;
   &--inner {
     padding-top: 50px;
     padding-bottom: 70px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: auto;
+    min-height: 100px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -20,6 +40,8 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .intro__desc {

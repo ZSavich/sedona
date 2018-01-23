@@ -2,12 +2,48 @@
   @include list-none;
   background-color: white;
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
   text-align: left;
+}
+
+.we-have__item {
+  position: relative;
+  padding-left: 50px;
+  padding-top: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    left: 0;
+    top: 0;
+  }
+
+  &--hotel::before {
+    width: 37px;
+    height: 36px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--souvenir::before {
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food::before {
+    width: 38px;
+    height: 34px;
+    background-image: url("../img/icon-burger.svg");
+  }
 }
 
 .we-have__title {
   @include font(18px, bold, 26px);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .we-have__desc {

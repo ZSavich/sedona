@@ -1,8 +1,22 @@
 .advantages {
+  position: relative;
   background-color: $skyblue;
   text-align: center;
   padding-top: 20px;
   overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    width: auto;
+    min-height: 20px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    top: 0;
+    left: -5px;
+    right: -5px;
+  }
 }
 
 .advantages__list {
@@ -13,8 +27,10 @@
   background-color: $skyblue;
   color: white;
 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 1px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .advantages__info--gray {
@@ -36,14 +52,16 @@
 
 .advantages__title {
   @include font(18px, bold, 26px);
+  margin-top: 40px;
 }
 
 .advantages__num {
   @include font(14px, normal, 21px);
 }
 
-advantages__desc {
+.advantages__desc {
   @include font(14px, normal, 21px);
+  margin-bottom: 20px;
 }
 
 .advantages__photo {
