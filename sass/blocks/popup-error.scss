@@ -1,0 +1,17 @@
+.popup-error__btn {
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media (min-width: $table) {
+
+  .popup-error {
+    width: 400px;
+    box-sizing: border-box;
+  }
+
+  .popup-error__btn {
+    width: 100%;
+  }
+}

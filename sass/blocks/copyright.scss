@@ -19,3 +19,9 @@
   @include font(14px, normal, 26px);
   margin-right: 10px;
 }
+
+@media (min-width: $table) {
+  .copyright__text {
+    margin-top: 3px;
+  }
+}

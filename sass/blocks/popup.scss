@@ -22,18 +22,12 @@
   margin-bottom: 0px;
 }
 
-.popup-error__btn {
-  width: 180px;
-  margin: 0 auto;
-  margin-top: 20px;
-}
+@media (min-width: $table) {
+  .popup {
+    width: 640px;
+  }
 
-.popup-sent__wrapper-btn {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.popup-sent__btn {
-  font-size: 18px;
-  width: 100%;
+  .popup__wrapper {
+    padding: 40px 60px;
+  }
 }

@@ -6,6 +6,10 @@
   text-align: left;
 }
 
+.we-have__wrapper {
+  padding: 0 20px;
+}
+
 .we-have__item {
   position: relative;
   padding-left: 50px;
@@ -48,4 +52,50 @@
 
 .we-have__desc {
   @include font(14px, normal, 21px);
+}
+
+@media (min-width: $table) {
+  .we-have {
+    width: 100%;
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+
+  .we-have__wrapper {
+    display: flex;
+    padding: 0px;
+  }
+
+  .we-have__item {
+    width: 256px;
+    padding-left: 0px;
+    padding-top: 95px;
+    padding-left: 47px;
+    padding-right: 47px;
+    text-align: center;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--hotel::before {
+      width: 75px;
+      height: 72px;
+    }
+
+    &--souvenir::before {
+      width: 64px;
+      height: 75px;
+    }
+
+    &--food::before {
+      width: 77px;
+      height: 68px;
+    }
+  }
 }

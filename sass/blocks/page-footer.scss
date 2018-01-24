@@ -13,3 +13,20 @@
 .page-footer__social {
   margin-bottom: 40px;
 }
+
+@media (min-width: $table) {
+  .page-footer {
+    width: $table;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .page-footer__heshteg {
+    margin: 0;
+  }
+
+  .page-footer__social {
+    margin: 0px;
+  }
+}

@@ -1,7 +1,12 @@
 .video {
-  padding-top: 35px;
+  margin-top: 35px;
   padding-bottom: 35px;
   text-align: center;
+}
+
+.video__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .video__title {
@@ -13,4 +18,24 @@
 .video__desc {
   @include font(14px, normal, 24px);
   margin-bottom: 40px;
+}
+
+@media (min-width: $table) {
+  .video {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .video__wrapper {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  .video__desc {
+    margin-bottom: 55px;
+  }
+
+  .video__player-img {
+    width: 100%;
+  }
 }

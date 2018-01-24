@@ -25,3 +25,14 @@
 .main-nav--close .main-nav__toggle {
   background-image: url("../img/icon-menu.svg");
 }
+
+@media (min-width: $table) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    background-color: white;
+    color: black;
+  }
+}

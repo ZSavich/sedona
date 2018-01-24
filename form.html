@@ -16,6 +16,9 @@
           <li class="site-list__item">
             <a href="photo.html">Фото и видео</a>
           </li>
+          <li class="site-list__item  site-list__item--table">
+            <img class="site-list__logo" src="../img/logo-sedona-mobile.svg" width="102" alt="City of Sedona">
+          </li>
           <li class="site-list__item">
             <a href="#">Форма отзыва</a>
           </li>
@@ -34,14 +37,16 @@
         <header class="intro__header  intro__header--inner">
           <img class="intro__text" src="../img/text-sedona.svg" width="229" height="39" alt="Sedona">
         </header>
-        <h2 class="intro__title">Оставьте свой отзыв</h2>
-        <p class="intro__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="intro__wrapper">
+          <h2 class="intro__title">Оставьте свой отзыв</h2>
+          <p class="intro__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
       </section>
-      <section class="feedback  container">
+      <section class="feedback">
         <h2 class="visual-hidden">Форма отправки отзыва</h2>
         <form class="feedback__form  form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="feedback__cell   feedback__cell--fio">
-            <legend class="feedback__title">Представьтесь:</legend>
+            <span class="feedback__title">Представьтесь:</span>
             <p>
               <label class="feedback__label" for="fname">Имя*:</label>
               <input type="text" id="fname" class="feedback__input-text" name="first-name" placeholder="Петр">
@@ -56,7 +61,7 @@
             </p>
           </fieldset>
           <fieldset class="feedback__cell  feedback__cell--contact">
-            <legend class="feedback__title">Контактная информация:</legend>
+            <span class="feedback__title">Контактная информация:</span>
             <div class="feedback__contact-block">
               <label class="feedback__label" for="phone">Контактный телефон*:</label>
               <div class="feedback__container-icon">
@@ -73,7 +78,7 @@
             </div>
           </fieldset>
           <fieldset class="feedback__cell  feedback__cell--impression">
-            <legend class="feedback__title">Ваше общее впечатление:</legend>
+            <span class="feedback__title">Ваше общее впечатление:</span>
             <label class="feedback__radio-label">
               <input type="radio" name="impression" value="positive" checked>
               <i class="feedback__radio-icon"></i>
@@ -91,7 +96,8 @@
             </label>
           </fieldset>
           <fieldset class="feedback__cell  feedback__cell--visited">
-            <legend class="feedback__title">Посещенные достопримечательности:</legend>
+            <span class="feedback__title">Посещенные достопримечательности:</span>
+            <div class="feedback__checkbox-wrapper">
             <label class="feedback__checkbox-label">
               <input type="checkbox" name="Devils bridge" value="Devils Bridge" checked>
               <i class="feedback__checkbox-icon"></i>
@@ -112,12 +118,16 @@
               <i class="feedback__checkbox-icon"></i>
               <span class="feedback__checkbox-title">Красные скалы</span>
             </label>
+            </div>
           </fieldset>
           <fieldset class="feedback__cell  feedback__cell--emotions">
-            <legend class="feedback__title">Опишите свои эмоции:</legend>
+            <span class="feedback__title">Опишите свои эмоции:</span>
             <textarea name="emotions" class="feedback__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="feedback__submit btn" type="submit">Отправить отзыв</button>
+          <div class="feedback__btn-wrapper">
+            <button class="feedback__submit btn" type="submit">Отправить отзыв</button>
+            <i class="feedback__required"><sup>*</sup> - Обязательное поле</i>
+          </div>
         </form>
       </section>
     </main>

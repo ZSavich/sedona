@@ -5,7 +5,7 @@
 }
 
 .intro__wrapper {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .intro__header {
@@ -47,4 +47,28 @@
 .intro__desc {
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: $table) {
+  .intro {
+    margin-top: 0;
+  }
+
+  .intro__header {
+    height: 385px;
+    padding-top: 75px;
+    padding-bottom: 60px;
+
+    &--inner {
+      height: 140px;
+      padding-top: 95px;
+      padding-bottom: 60px;
+    }
+  }
+
+  .intro__wrapper {
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 40px;
+  }
 }

@@ -1,7 +1,11 @@
-
 .feedback input[type="radio"],
 .feedback input[type="checkbox"] {
   display: none;
+}
+
+.feedback {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .feedback__cell {
@@ -24,6 +28,8 @@
   @include font(18px, bold, 26px);
   text-align: center;
   padding-top: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .feedback__label {
@@ -210,4 +216,91 @@
 
 .feedback__submit {
   width: 100%;
+}
+
+.feedback__required {
+  display: none;
+}
+
+@media (min-width: $table) {
+  .feedback {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .feedback__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback__cell::before {
+    display: none;
+  }
+
+  .feedback__cell {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+  }
+
+  .feedback__contact {
+    width: 100%;
+  }
+
+  .feedback__contact-block .feedback__label {
+    padding-left: 25px;
+    margin-bottom: 5px;
+  }
+
+  .feedback__cell--fio {
+    width: 324px;
+    padding-left: 55px;
+    box-sizing: border-box;
+
+    & .feedback__title {
+      text-align: left;
+      margin-bottom: 40px;
+    }
+  }
+
+  .feedback__cell--impression {
+    width: 324px;
+    order: -2;
+
+    & .feedback__title {
+      text-align: left;
+      margin-bottom: 40px;
+    }
+  }
+
+  .feedback__cell--visited {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .feedback__checkbox-label {
+  }
+
+  .feedback__checkbox-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 230px;
+
+  }
+
+  .feedback__btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feedback__submit {
+    width: 324px;
+  }
+
+  .feedback__required {
+    display: block;
+  }
 }
