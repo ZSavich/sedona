@@ -2,8 +2,7 @@ body {
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
-
-  background-color: white;
+  background-color: #f2f2f2;
 
   font-family: PTSans, Arial, sans-serif;
   line-height: 21px;
@@ -25,5 +24,11 @@ img {
 @media (min-width: $table) {
   body {
     min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop) {
+  body {
+    min-width: 1200px;
   }
 }

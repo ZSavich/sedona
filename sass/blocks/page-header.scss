@@ -18,3 +18,9 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-header {
+    width: 1200px;
+  }
+}

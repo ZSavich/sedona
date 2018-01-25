@@ -1,5 +1,6 @@
 .video {
-  margin-top: 35px;
+  background-color: white;
+  padding-top: 35px;
   padding-bottom: 35px;
   text-align: center;
 }
@@ -37,5 +38,12 @@
 
   .video__player-img {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .video__player {
+    width: 800px;
+    margin: 0 auto;
   }
 }

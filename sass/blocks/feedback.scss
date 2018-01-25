@@ -4,6 +4,7 @@
 }
 
 .feedback {
+  background-color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -302,5 +303,59 @@
 
   .feedback__required {
     display: block;
+  }
+}
+
+@media (min-width: $desktop) {
+  .feedback {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .feedback__cell--fio {
+    padding-left: 0px;
+    width: 400px;
+    margin-left: auto;
+  }
+
+  .feedback__cell--impression {
+    width: 400px;
+
+    & .feedback__title {
+      text-align: center;
+    }
+  }
+
+  .feedback__contact-blocks {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback__contact-block {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .feedback__contact-block .feedback__label {
+    width: auto;
+    padding-left: 0px;
+    padding-right: 15px;
+  }
+
+  .feedback__cell--visited {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .feedback__checkbox-wrapper {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feedback__submit {
+    width: 480px;
   }
 }

@@ -125,3 +125,13 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .advantages__info {
+    width: 400px;
+  }
+
+  .advantages__wrapper .advantages__item {
+    width: 400px;
+  }
+}

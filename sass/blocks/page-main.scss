@@ -8,3 +8,9 @@
     width: 768px;
   }
 }
+
+@media (min-width: $desktop) {
+    .page-main {
+      width: 1200px;
+    }
+}
