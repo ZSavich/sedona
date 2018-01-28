@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+.social__item {
+  background-color: #5496bd;
+}
+
 .social__item:not(:last-child) {
   margin-right: 5px;
 }
@@ -30,5 +34,15 @@
 
   &--yt {
     background-image: url("../img/icon-youtube.svg")
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: transparent;
+    opacity: 0.3;
   }
 }

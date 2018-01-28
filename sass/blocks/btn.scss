@@ -8,4 +8,25 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #e5e5e5;
+	}
+}
+
+.btn--disabled:hover,
+.btn--disabled:focus {
+  background-color: #e5e5e5;
+  cursor: default;
 }

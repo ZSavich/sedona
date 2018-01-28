@@ -5,14 +5,18 @@
 
 .copyright__link {
   display: block;
-  background-color: translate;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-indent: -9999px;
-  overflow: hidden;
   width: 27px;
   height: 34px;
+
+  &:hover path,
+  &:focus path {
+    fill: #81b3d2;
+  }
+
+  &:active path {
+    fill: black;
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
