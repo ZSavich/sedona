@@ -44,10 +44,22 @@
     }
   }
 
+  .site-list__item:nth-child(2) {
+    margin-right: auto;
+  }
+
   .site-list__item a {
     color: black;
     font-size: 14px;
     box-shadow: none;
     border: none;
+    background-color: white;
+    width: 153px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list__item a {
+    width: 240px;
   }
 }
