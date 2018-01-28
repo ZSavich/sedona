@@ -3,19 +3,9 @@
   margin: 0 auto;
 }
 
-.page-header__logo {
-  display: block;
-  text-align: center;
-  line-height: 0;
-}
-
 @media (min-width: $table) {
   .page-header {
     width: 768px;
-  }
-
-  .page-header__logo {
-    display: none;
   }
 }
 

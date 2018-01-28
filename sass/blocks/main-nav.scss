@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  background-color: $skyblue;
   color: white;
 }
 
@@ -20,6 +19,26 @@
   right: 20px;
   top: 17px;
   cursor: pointer;
+}
+
+.main-nav__logo {
+  display: none;
+  text-align: center;
+  line-height: 0;
+}
+
+.main-nav--close .main-nav__logo {
+  display: block;
+}
+
+.main-nav--nojs {
+  & .main-nav__list {
+    display: block;
+  }
+
+  & .main-nav__logo {
+    display: none;
+  }
 }
 
 .main-nav--close .main-nav__toggle {
