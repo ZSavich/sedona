@@ -15,6 +15,12 @@
   right: 20px;
   top: 17px;
   cursor: pointer;
+  outline: none;
+}
+
+.main-nav__logo-img {
+    width: 102px;
+    height: 83px;
 }
 
 @media (max-width: 767px) {
@@ -65,5 +71,12 @@
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__logo-img {
+    width: 187px;
+    height: 96px;
   }
 }

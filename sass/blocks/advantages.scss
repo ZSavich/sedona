@@ -66,6 +66,7 @@
 .advantages__photo {
   margin: 0;
   line-height: 0;
+  height: 260px;
 }
 
 @media (min-width: $table) {
@@ -98,7 +99,7 @@
   }
 
   .advantages__photo {
-    background-color: gray;
+    background-color: white;
     flex-grow: 1;
   }
 
@@ -132,5 +133,12 @@
 
   .advantages__wrapper .advantages__item {
     width: 400px;
+  }
+
+  .advantages__photo {
+    height: 255px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
   }
 }
