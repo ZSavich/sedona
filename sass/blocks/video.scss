@@ -1,7 +1,7 @@
 .video {
   background-color: white;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
@@ -21,6 +21,81 @@
   margin-bottom: 40px;
 }
 
+.video__player {
+  position: relative;
+}
+
+.video__control {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  right: 20px;
+  padding: 23px 22px;
+  background-color: #f2f2f2;
+  display: flex;
+  transform: translateY(100%);
+  justify-content: space-between;
+}
+
+.video__subtitles {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.video__subtitles,
+.video__full,
+.video__reply {
+  cursor: pointer;
+}
+
+.video__subtitles,
+.video__reply {
+  &:hover path {
+    fill: #333333;
+  }
+}
+
+.video__full {
+  &:hover polygon {
+    fill: #333333;
+  }
+}
+
+.video__time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  padding: 20px 22px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__timeline {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 3px;
+
+  &::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.video__player-img {
+  display: block;
+}
+
 @media (min-width: $table) {
   .video {
     padding-left: 60px;
@@ -38,6 +113,48 @@
 
   .video__player-img {
     width: 100%;
+  }
+
+  .video__control {
+    transform: translateY(0);
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .video__time {
+    position: relative;
+    transform: translateY(0);
+    width: 80%;
+    background-color: transparent;
+  }
+
+  .video__subtitles {
+    margin-left: 0;
+  }
+
+  .video__reply,
+  .video__subtitles {
+    & path {
+      fill: white;
+    }
+
+    &:hover path {
+      fill: #c1c1c1;
+    }
+  }
+
+  .video__full {
+    & polygon {
+      fill: white;
+    }
+
+    &:hover polygon {
+      fill: #c1c1c1;
+    }
   }
 }
 
