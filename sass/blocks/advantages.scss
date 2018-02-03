@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
+    background-color: $skyblue;
     top: 0;
     left: -5px;
     right: -5px;
@@ -56,6 +57,36 @@
 
 .advantages__num {
   @include font(14px, normal, 21px);
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: -12px;
+  }
+
+  &::after {
+    content: "";
+    width: 8px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: -12px;
+  }
+}
+.advantages__num--black {
+  &::before {
+    background-color: black;
+  }
+
+  &::after {
+    background-color: black;
+  }
 }
 
 .advantages__desc {
@@ -66,7 +97,7 @@
 .advantages__photo {
   margin: 0;
   line-height: 0;
-  height: 260px;
+  height: 256px;
 }
 
 @media (min-width: $table) {
@@ -103,6 +134,11 @@
     flex-grow: 1;
   }
 
+  .advantages__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
   .advantages__wrapper {
     background-color: #eeeeee;
     display: flex;
@@ -133,6 +169,20 @@
 
   .advantages__wrapper .advantages__item {
     width: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+  }
+
+  .advantages__title {
+    padding-left: 79.5px;
+    padding-right: 79.5px;
+  }
+
+  .advantages__desc {
+    margin-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .advantages__photo {

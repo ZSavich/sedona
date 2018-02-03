@@ -1,3 +1,10 @@
+.popup-error {
+  position: fixed;
+  left: 50%;
+  bottom: 50vh;
+  transform: translateX(-50%);
+}
+
 .popup-error__btn {
   width: 180px;
   margin: 0 auto;

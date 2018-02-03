@@ -7,6 +7,7 @@
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 40px;
 }
 
 .feedback__cell {
@@ -48,6 +49,7 @@
   padding-bottom: 15px;
   padding-left: 22px;
   padding-right: 22px;
+  min-height: 28px;
 }
 
 .feedback__contact {
@@ -59,6 +61,7 @@
   padding: 15px 22px;
   padding-right: 10px;
   width: auto;
+  flex-grow: 1;
 }
 
 .feedback__radio-title {
@@ -280,6 +283,7 @@
     width: 100%;
     margin: 0px;
     display: flex;
+    margin-bottom: 25px;
   }
 
   .feedback__contact {
@@ -295,6 +299,7 @@
     width: 324px;
     padding-left: 55px;
     box-sizing: border-box;
+    flex-direction: column;
 
     & .feedback__title {
       text-align: left;
@@ -302,9 +307,43 @@
     }
   }
 
+  .feedback__title--lines {
+    display: table;
+    white-space: nowrap;
+  }
+
+  .feedback__title {
+    overflow: hidden;
+    position: relative;
+    padding-top: 0px;
+    &--lines::before,
+    &--lines::after {
+      content: "";
+      border-top: 1px solid #dbdbdb;
+      display: table-cell;
+      position: relative;
+      top: -50%;
+      width: 45%;
+      transform: translateY(50%);
+    }
+
+    &--lines::before {
+      right: 60px;
+    }
+
+    &--lines::after {
+      left: 60px;
+    }
+  }
+
+  .feedback__cell--contact {
+    flex-direction: column;
+  }
+
   .feedback__cell--impression {
     width: 324px;
     order: -2;
+    flex-direction: column;
 
     & .feedback__title {
       text-align: left;
@@ -313,8 +352,11 @@
   }
 
   .feedback__cell--visited {
-    padding-left: 80px;
-    padding-right: 80px;
+    flex-direction: column;
+  }
+
+  .feedback__cell--emotions {
+    flex-direction: column;
   }
 
   .feedback__checkbox-label {
@@ -325,7 +367,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 230px;
-
+    margin-left: 80px;
+    margin-right: 80px;
   }
 
   .feedback__btn-wrapper {
@@ -395,6 +438,7 @@
     height: auto;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0px;
   }
 
   .feedback__submit {

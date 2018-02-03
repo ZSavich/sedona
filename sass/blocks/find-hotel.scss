@@ -16,11 +16,34 @@
 .find-hotel__desc {
   @include font(14px, normal, 24px);
   margin: 25px 0px;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: $table) {
+  .find-hotel {
+    padding-top: 50px;
+  }
+
   .find-hotel__wrapper {
     padding-left: 155px;
     padding-right: 155px;
+  }
+
+  .find-hotel__title {
+    font-size: 30px;
+  }
+
+  .find-hotel__desc br {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop) {
+  .find-hotel__btn {
+    width: 460px;
+    margin: 0 auto;
   }
 }

@@ -152,4 +152,17 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+  .photo__like {
+    &::before {
+      background-image: url("../img/icon-like--white.svg");
+      opacity: 1;
+    }
+  }
+
+  .video__desc {
+      width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
