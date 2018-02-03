@@ -8,12 +8,16 @@
   width: 27px;
   height: 34px;
 
-  &:hover path,
-  &:focus path {
+  & svg {
+    fill: #000000;
+  }
+
+  &:hover svg,
+  &:focus svg {
     fill: #81b3d2;
   }
 
-  &:active path {
+  &:active svg {
     fill: black;
     opacity: 0.3;
   }

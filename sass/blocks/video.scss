@@ -49,14 +49,9 @@
 }
 
 .video__subtitles,
-.video__reply {
-  &:hover path {
-    fill: #333333;
-  }
-}
-
+.video__reply,
 .video__full {
-  &:hover polygon {
+  &:hover svg {
     fill: #333333;
   }
 }
@@ -137,22 +132,13 @@
   }
 
   .video__reply,
-  .video__subtitles {
-    & path {
-      fill: white;
-    }
-
-    &:hover path {
-      fill: #c1c1c1;
-    }
-  }
-
+  .video__subtitles,
   .video__full {
-    & polygon {
+    & svg {
       fill: white;
     }
 
-    &:hover polygon {
+    &:hover svg {
       fill: #c1c1c1;
     }
   }
