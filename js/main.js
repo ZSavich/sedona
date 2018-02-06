@@ -4,8 +4,6 @@ var btnOpnMenu = mainNav.querySelector(".main-nav__toggle");
 var btnSendMail = document.querySelector("#send-feedback");
 var popupSent = document.querySelector(".popup-sent");
 var popupError = document.querySelector(".popup-error");
-var ClosePopupSent = popupSent.querySelector("#popup-close");
-var ClosePopupError = popupError.querySelector("#popup-close");
 
 mainNav.classList.remove("main-nav--nojs");
 
@@ -14,17 +12,27 @@ btnOpnMenu.addEventListener("click", function(event) {
   mainNav.classList.toggle("main-nav--close");
 });
 
-btnSendMail.addEventListener("click", function(event) {
-  event.preventDefault();
-  popupSent.classList.add("popup--open");
-});
+if(btnSendMail != null) {
+  btnSendMail.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupSent.classList.add("popup--open");
+  });
+}
 
-ClosePopupSent.addEventListener("click", function(event) {
-  event.preventDefault();
-  popupSent.classList.remove("popup--open");
-});
+if(popupSent != null) {
+	var ClosePopupSent = popupSent.querySelector("#popup-close");
 
-ClosePopupError.addEventListener("click", function(event) {
-  event.preventDefault();
-  popupError.classList.remove("popup--open");
-});
+	ClosePopupSent.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupSent.classList.remove("popup--open");
+  });
+}
+
+if(popupError != null) {
+	var ClosePopupError = popupError.querySelector("#popup-close");
+
+	ClosePopupError.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupError.classList.remove("popup--open");
+  });
+}

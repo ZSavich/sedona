@@ -35,12 +35,17 @@ gulp.task("del", function() {
 });
 
 gulp.task("runsec", function(callback){
-  run("del",["style","jsmin","img","copyhtml"],callback);
+  run("del",["style","jsmin","img","copyhtml","copyfonts"],callback);
 });
 
 gulp.task("copyhtml", function(){
 	gulp.src(["*.html","sprite.svg"])
 	  .pipe(gulp.dest("./build"))
+	});
+
+gulp.task("copyfonts", function(){
+	gulp.src("./fonts/*.{woff,woff2}")
+	  .pipe(gulp.dest("./build/fonts"))
 	});
 
 gulp.task("jsmin", function(){
