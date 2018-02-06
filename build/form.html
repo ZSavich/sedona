@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sedona: Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav  main-nav--close  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list  site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item  site-list__item--active">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Html Academy</a>
+          </li>
+        </ul>
+        <a href="#" class="main-nav__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="102" alt="City of Sedona">
+          </picture>
+        </a>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visual-hidden">Добро пожаловать в Седону</h1>
+      <section class="intro">
+        <header class="intro__header  intro__header--inner">
+          <img class="intro__text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
+        </header>
+        <div class="intro__wrapper">
+          <h2 class="intro__title  intro__title--inner">Оставьте свой отзыв</h2>
+          <p class="intro__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+      </section>
+      <section class="feedback">
+        <h2 class="visual-hidden">Форма отправки отзыва</h2>
+        <form class="feedback__form  form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="feedback__cell   feedback__cell--fio">
+            <span class="feedback__title">Представьтесь:</span>
+            <p>
+              <label class="feedback__label" for="fname">Имя*:</label>
+              <input type="text" id="fname" class="feedback__input-text" name="first-name" placeholder="Петр">
+            </p>
+            <p>
+              <label class="feedback__label" for="lname">Фамилия*:</label>
+              <input type="text" id="lname" class="feedback__input-text" name="last-name" placeholder="Иванов">
+            </p>
+            <p>
+              <label class="feedback__label" for="mname">Отчество:</label>
+              <input type="text" id="mname" class="feedback__input-text" name="middle-name" placeholder="Александрович">
+            </p>
+          </fieldset>
+          <fieldset class="feedback__cell  feedback__cell--contact">
+            <span class="feedback__title  feedback__title--lines">Контактная информация:</span>
+            <div class="feedback__contact-blocks">
+              <div class="feedback__contact-block">
+                <label class="feedback__label" for="phone">Контактный телефон*:</label>
+                <div class="feedback__container-icon">
+                  <input type="text" class="feedback__contact  feedback__contact--phone" name="phone" id="phone" placeholder="Введите телефон">
+                  <div class="feedback__icon  feedback__icon--phone"></div>
+                </div>
+              </div>
+              <div class="feedback__contact-block">
+                <label class="feedback__label" for="email">Электронная почта*:</label>
+                <div class="feedback__container-icon">
+                  <input type="text" class="feedback__contact  feedback__contact--email" name="email" id="email" placeholder="Введите e-mail">
+                  <div class="feedback__icon  feedback__icon--email"></div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="feedback__cell  feedback__cell--impression">
+            <span class="feedback__title">Ваше общее впечатление:</span>
+            <label class="feedback__radio-label">
+              <input type="radio" name="impression" value="positive" checked>
+              <i class="feedback__radio-icon"></i>
+              <span class="feedback__radio-title">Скорее положительное</span>
+            </label>
+            <label class="feedback__radio-label">
+              <input type="radio" name="impression" value="negative">
+              <i class="feedback__radio-icon"></i>
+              <span class="feedback__radio-title">Скорее отрицательное</span>
+            </label>
+            <label class="feedback__radio-label">
+              <input type="radio" name="impression" value="i dont know">
+              <i class="feedback__radio-icon"></i>
+              <span class="feedback__radio-title">Затрудняюсь ответить</span>
+            </label>
+          </fieldset>
+          <fieldset class="feedback__cell  feedback__cell--visited">
+            <span class="feedback__title  feedback__title--lines">Посещенные <br>достопримечательности:</span>
+            <div class="feedback__checkbox-wrapper">
+            <label class="feedback__checkbox-label">
+              <input type="checkbox" name="Devils bridge" value="Devils Bridge" checked>
+              <i class="feedback__checkbox-icon"></i>
+              <span class="feedback__checkbox-title">Мост льявола</span>
+            </label>
+            <label class="feedback__checkbox-label">
+              <input type="checkbox" name="Slide-Park" value="Slide-Park" checked>
+              <i class="feedback__checkbox-icon"></i>
+              <span class="feedback__checkbox-title">Слайд-парк</span>
+            </label>
+            <label class="feedback__checkbox-label">
+              <input type="checkbox" name="Kolokol" value="Kolokol">
+              <i class="feedback__checkbox-icon"></i>
+              <span class="feedback__checkbox-title">Гора-Колокол</span>
+            </label>
+            <label class="feedback__checkbox-label">
+              <input type="checkbox" name="Red Rocks" value="Red Rocks" checked>
+              <i class="feedback__checkbox-icon"></i>
+              <span class="feedback__checkbox-title">Красные скалы</span>
+            </label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback__cell  feedback__cell--emotions">
+            <span class="feedback__title  feedback__title--lines">Опишите свои эмоции:</span>
+            <textarea name="emotions" class="feedback__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <div class="feedback__btn-wrapper">
+            <button id="send-feedback" class="feedback__submit btn" type="submit">Отправить отзыв</button>
+            <i class="feedback__required"><sup>*</sup> - Обязательное поле</i>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__heshteg  heshteg">
+        <a href="#" class="heshteg__link">#visitsedona</a>
+      </div>
+      <div class="page-footer__social  social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--tw">Мы в Твитере</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--fb">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--yt">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright  copyright">
+        <b class="copyright__text">Разработано</b>
+        <a href="#" class="copyright__link">
+          <svg width="27" height="34">
+            <use xlink:href="sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <section class="popup popup-error">
+      <div class="popup__wrapper">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button id="popup-close" class="popup-error__btn btn">Ок</button>
+      </div>
+    </section>
+    <section class="popup popup-sent">
+      <div class="popup__wrapper">
+        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+        <p class="popup__desc">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="popup-sent__wrapper-btn">
+        <button id="popup-close" class="popup-sent__btn btn">Закрыть окно</button>
+      </div>
+    </section>
+    <script src="js/svguse.js"></script>
+    <script src="js/picturefil.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
