@@ -39,7 +39,7 @@ gulp.task("runsec", function(callback){
 });
 
 gulp.task("copyhtml", function(){
-	gulp.src(["*.html","sprite.svg"])
+	gulp.src(["*.html","sprite.svg","favicon.ico"])
 	  .pipe(gulp.dest("./build"))
 	});
 
